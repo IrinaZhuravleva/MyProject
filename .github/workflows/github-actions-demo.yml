@@ -25,4 +25,11 @@ jobs:
 
       - run: yarn install
       - run: yarn run test
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-without-markdown
+          path: |
+            cypress/videos
+
 
