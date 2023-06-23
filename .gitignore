@@ -1,0 +1,29 @@
+node_modules
+.eslintcache
+*.tmp
+
+# IDE
+.idea/
+.vscode/
+
+# MacOS
+.DS_Store
+
+node_modules/
+
+.secret-*
+coverage
+# Needless root Pipfile
+/Pipfile
+
+multi-reporter-config.json
+
+cypress/cached-data-test
+cypress/downloads
+cypress/fixtures/*.csv
+cypress/videos
+cypress/screenshots
+cucumber-json
+runner-results
+GherkinSyncTools
+scripts/gherkinSyncTool/temp
