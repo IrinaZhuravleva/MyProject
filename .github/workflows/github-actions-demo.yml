@@ -16,3 +16,11 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - run: npm install
